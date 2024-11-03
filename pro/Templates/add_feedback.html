@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Feedback</h2>
+        <form id="feedbackForm" method="POST" action="{{ url_for('add_feedback') }}">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name">
+
+            <label for="staff_name">Staff Name:</label>
+            <input type="text" id="staff_name" name="staff_name">
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffbe6; /* Light yellow background */
+}
+
+.centered-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* Center-align text inside the container */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffcc00; /* Yellow color for the header text */
+    font-size: 2em;
+    margin: 0 auto; /* Center-align the header text */
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #ffcc00; /* Yellow color for the sign-up link */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ffcc00; /* Yellow background on hover */
+    color: white;
+}
+
+main {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+a.button, button.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Yellow background for buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+a.button:hover, button.button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+form {
+    text-align: left;
+    margin: 0 auto; /* Center-align the form */
+    max-width: 600px; /* Optional: limit the form width */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333; /* Dark text color for labels */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffcc00; /* Yellow background for table headers */
+    color: white;
+}

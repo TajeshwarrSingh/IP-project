@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>View Feedback</h2>
+        <form method="POST" action="{{ url_for('view_feedback') }}">
+            <label for="staff_name">Staff Name:</label>
+            <input type="text" id="staff_name" name="staff_name">
+            <button type="submit">View Feedback</button>
+        </form>
+
+        {% if feedback_list %}
+        <h3>Feedback for {{ staff_name }}:</h3>
+        <ul>
+            {% for feedback in feedback_list %}
+            <li><strong>{{ feedback[0] }}:</strong> {{ feedback[1] }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

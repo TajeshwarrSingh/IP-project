@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feedback Form</h1>
+        </header>
+        <main>
+            <form action="/submit_feedback" method="post">
+                <label for="class">Class:</label>
+                <input type="number" id="class" name="class" required><br>
+
+                <label for="section">Section:</label>
+                <input type="text" id="sem" name="section" required><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="form teacher">Form Teacher:</label>
+                <input type="text" id="branch" name="branch" required><br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br>
+
+                <label for="ques1">Question 1:</label>
+                <input type="number" id="ques1" name="ques1" required><br>
+
+                <label for="ques2i">Question 2i:</label>
+                <input type="number" id="ques2i" name="ques2i" required><br>
+
+                <label for="ques2ii">Question 2ii:</label>
+                <input type="number" id="ques2ii" name="ques2ii" required><br>
+
+                <label for="ques2iii">Question 2iii:</label>
+                <input type="number" id="ques2iii" name="ques2iii" required><br>
+
+                <label for="ques2iv">Question 2iv:</label>
+                <input type="number" id="ques2iv" name="ques2iv" required><br>
+
+                <label for="ques2v">Question 2v:</label>
+                <input type="number" id="ques2v" name="ques2v" required><br>
+
+                <label for="ques3">Question 3:</label>
+                <input type="number" id="ques3" name="ques3" required><br>
+
+                <label for="ques4">Question 4:</label>
+                <input type="number" id="ques4" name="ques4" required><br>
+
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="remarks" required></textarea><br>
+
+                <button type="submit" class="button">Submit Feedback</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

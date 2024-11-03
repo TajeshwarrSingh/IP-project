@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="centered-page">
+    <div class="container">
+        <header>
+            <h1>Admin Page</h1>
+        </header>
+        <main>
+            <h2>All Feedbacks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Class</th>
+                        <th>Section</th>
+                        <th>Date</th>
+                        <th>Form Teacher</th>
+                        <th>Subject</th>
+                        <th>Q1</th>
+                        <th>Q2i</th>
+                        <th>Q2ii</th>
+                        <th>Q2iii</th>
+                        <th>Q2iv</th>
+                        <th>Q2v</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for feedback in feedbacks %}
+                    <tr>
+                        <td>{{ feedback.id }}</td>
+                        <td>{{ feedback.class }}</td>
+                        <td>{{ feedback.section }}</td>
+                        <td>{{ feedback.date }}</td>
+                        <td>{{ feedback.formteacher }}</td>
+                        <td>{{ feedback.subject }}</td>
+                        <td>{{ feedback.ques1 }}</td>
+                        <td>{{ feedback.ques2i }}</td>
+                        <td>{{ feedback.ques2ii }}</td>
+                        <td>{{ feedback.ques2iii }}</td>
+                        <td>{{ feedback.ques2iv }}</td>
+                        <td>{{ feedback.ques2v }}</td>
+                        <td>{{ feedback.ques3 }}</td>
+                        <td>{{ feedback.ques4 }}</td>
+                        <td>{{ feedback.remarks }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
